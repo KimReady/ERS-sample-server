@@ -3,3 +3,4 @@ ers/__pycache__
 .idea/
 static/admin/
 venv/
+db.sqlite3
