@@ -5,6 +5,7 @@ class ErrorLog(models.Model):
     reg_date = models.DateTimeField()
     android_id = models.CharField(max_length=50)
     package_name = models.CharField(max_length=100)
+    app_version = models.CharField(max_length=30)
     sdk_version = models.IntegerField()
     phone_brand = models.CharField(max_length=50)
     phone_model = models.CharField(max_length=50)
@@ -13,6 +14,7 @@ class ErrorLog(models.Model):
     stacktrace = models.TextField()
     available_memory = models.IntegerField()
     total_memory = models.IntegerField()
+    company = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
+    email = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.package_name + ' | ' + str(self.reg_date) + ' | ' + self.log_level
