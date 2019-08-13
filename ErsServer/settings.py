@@ -31,6 +31,7 @@ ALLOWED_HOSTS = '*'
 # Application definition
 
 INSTALLED_APPS = [
+    'suit',
     'ers.apps.ErsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,8 +56,7 @@ ROOT_URLCONF = 'ErsServer.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
