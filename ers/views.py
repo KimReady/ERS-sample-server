@@ -45,11 +45,10 @@ def parse_log(request_body):
         phone_brand=request_body['phone_brand'],
         phone_model=request_body['phone_model'],
         log_level=request_body['log_level'],
+        tag=request_body['tag'],
         message=request_body['message'],
         stacktrace=request_body['stacktrace'],
         available_memory=request_body['available_memory'],
         total_memory=request_body['total_memory'],
-        company=request_body['company'],
-        name=request_body['name'],
-        email=request_body['email']
+        custom_data=request_body['custom_data']
     )

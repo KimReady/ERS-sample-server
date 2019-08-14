@@ -10,11 +10,10 @@ class ErrorLog(models.Model):
     phone_brand = models.CharField(max_length=50)
     phone_model = models.CharField(max_length=50)
     log_level = models.CharField(max_length=30)
+    tag = models.CharField(max_length=50)
     message = models.TextField()
     stacktrace = models.TextField()
     available_memory = models.IntegerField()
     total_memory = models.IntegerField()
-    company = models.CharField(max_length=50)
-    name = models.CharField(max_length=50)
-    email = models.CharField(max_length=30)
+    custom_data = models.TextField()
 
