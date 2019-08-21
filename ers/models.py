@@ -3,6 +3,7 @@ from django.db import models
 
 class ErrorLog(models.Model):
     reg_date = models.DateTimeField()
+    log_date = models.DateTimeField()
     android_id = models.CharField(max_length=50)
     package_name = models.CharField(max_length=100)
     app_version = models.CharField(max_length=30)

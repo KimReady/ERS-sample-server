@@ -37,7 +37,8 @@ def register_error_logs(request):
 
 def parse_log(request_body):
     return ErrorLog(
-        reg_date=request_body['reg_date'],
+        reg_date=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        log_date=request_body['reg_date'],
         android_id=request_body['android_id'],
         package_name=request_body['package_name'],
         app_version=request_body['app_version'],
