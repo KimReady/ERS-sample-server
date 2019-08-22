@@ -7,3 +7,10 @@ Error Reporting Server의 역할은 다음과 같습니다.
 Example
 =====
 ![example](./image/example.png)
+
+Environment
+=====
+서버를 구동하기 위해 갖추어야 하는 python 환경은 다음과 같습니다.  
+* python 3.x
+* django 2.x
+* suit 2.x
